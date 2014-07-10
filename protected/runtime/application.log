@@ -1,0 +1,129 @@
+2014/07/10 13:20:29 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.rawData" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yiitest/protected/controllers/SiteController.php(280): CComponent->__get('rawData')
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionGrid()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('grid')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/grid')
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/yiitest/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yiitest/index.php?FilterForm[field1]=%C3%A9&FilterForm[id]=&FilterForm[field2]=&r=site/grid&test_page=1&test_sort=field1
+HTTP_REFERER=http://localhost/yiitest/index.php?r=site/index
+---
+2014/07/10 13:20:44 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.grid.CListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:323
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('zii.widgets.gri...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.gri...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /var/www/yiitest/protected/views/site/list.php(6): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yiites...')
+#5 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yiites...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yiites...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('list', Array, true)
+#8 /var/www/yiitest/protected/controllers/SiteController.php(336): CController->render('list', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionList()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('list')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/list')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/yiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiitest/index.php?r=site/list
+HTTP_REFERER=http://localhost/yiitest/index.php?FilterForm[field1]=%C3%A9&FilterForm[id]=&FilterForm[field2]=&r=site/grid&test_page=1&test_sort=field1
+---
+2014/07/10 13:20:52 [error] [exception.CException] exception 'CException' with message 'The property "itemView" cannot be empty.' in /var/www/yii/framework/zii/widgets/CListView.php:210
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(147): CListView->init()
+#1 /var/www/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#2 /var/www/yiitest/protected/views/site/list.php(6): CBaseController->widget('zii.widgets.CLi...', Array)
+#3 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yiites...')
+#4 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yiites...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yiites...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('list', Array, true)
+#7 /var/www/yiitest/protected/controllers/SiteController.php(336): CController->render('list', Array)
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionList()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('list')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/list')
+#14 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/yiitest/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yiitest/index.php?r=site/list
+HTTP_REFERER=http://localhost/yiitest/index.php?FilterForm[field1]=%C3%A9&FilterForm[id]=&FilterForm[field2]=&r=site/grid&test_page=1&test_sort=field1
+---
+2014/07/10 13:22:09 [error] [php] Trying to get property of non-object (/var/www/yiitest/protected/views/site/_view.php:2)
+Stack trace:
+#0 /var/www/yii/framework/zii/widgets/CListView.php(291): SiteController->renderFile()
+#1 /var/www/yii/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /var/www/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /var/www/yii/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#5 /var/www/yii/framework/web/CBaseController.php(181): CListView->run()
+#6 /var/www/yiitest/protected/views/site/list.php(7): SiteController->widget()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#10 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#11 /var/www/yiitest/protected/controllers/SiteController.php(336): SiteController->render()
+#12 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionList()
+#13 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#15 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/yiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiitest/index.php?r=site/list
+in /var/www/yiitest/protected/views/site/_view.php (2)
+in /var/www/yiitest/protected/views/site/list.php (7)
+in /var/www/yiitest/protected/controllers/SiteController.php (336)
+2014/07/10 13:25:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'param must be áűőú++, got: áűőú  ' in /var/www/yiitest/protected/controllers/SiteController.php:281
+Stack trace:
+#0 [internal function]: SiteController->actionGrid('????????  ')
+#1 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('grid')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/grid')
+#8 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/yiitest/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiitest/index.php?param=%C3%A1%C5%B1%C5%91%C3%BA++&r=site/grid&test_page=4
+---
+2014/07/10 13:26:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'param must be áűőú++, got: Ã¡Å±ÅÃº  ' in /var/www/yiitest/protected/controllers/SiteController.php:281
+Stack trace:
+#0 [internal function]: SiteController->actionGrid('???????????????...')
+#1 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('grid')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/grid')
+#8 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/yiitest/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiitest/index.php?param=%C3%83%C2%A1%C3%85%C2%B1%C3%85%C2%91%C3%83%C2%BA++&r=site/grid&test_page=6
+---
+2014/07/10 13:37:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('grid')
+#4 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/grid')
+#5 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/yiitest/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yiitest/index.php?r=site/grid
+HTTP_REFERER=http://localhost/yiitest/index.php?FilterForm[field1]=%C3%A9&FilterForm[id]=&FilterForm[field2]=&r=site/grid&test_page=1&test_sort=field1
+---
